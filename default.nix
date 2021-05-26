@@ -4,7 +4,7 @@
 
     nixf =
       pkgs.writeShellScript "nixf"
-        ''${nixUnstable}/bin/nix --experimental-features "nix-command flakes" $@'';
+        ''${nixUnstable}/bin/nix --experimental-features "nix-command flakes" "$@"'';
 
     completions =
       builtins.toString
